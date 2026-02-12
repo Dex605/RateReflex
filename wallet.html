@@ -8,7 +8,7 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: sans-serif;
             background: linear-gradient(180deg, #3d3d7e 0%, #1a1a35 100%);
             color: #ffffff;
             display: flex;
@@ -18,65 +18,60 @@
         }
         nav {
             width: 100%;
-            padding: 20px 0;
+            padding: 30px 0;
             display: flex;
             justify-content: center;
             gap: 30px;
             font-size: 0.9rem;
-            opacity: 0.8;
+            opacity: 0.7;
         }
         .container {
             width: 90%;
-            max-width: 450px;
-            margin-top: 50px;
+            max-width: 400px;
+            margin-top: 40px;
         }
         .glass-card {
-            background: rgba(255, 255, 255, 0.06);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 24px;
-            padding: 30px;
+            padding: 40px 20px;
             text-align: center;
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
         }
         .balance-label {
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
-            opacity: 0.6;
-            margin-bottom: 10px;
+            letter-spacing: 2px;
+            opacity: 0.5;
+            margin-bottom: 8px;
         }
         .amount {
-            font-size: 2.8rem;
+            font-size: 3rem;
             font-weight: 300;
-            margin: 0 0 25px 0;
+            margin: 0 0 30px 0;
         }
         .btn {
-            background: rgba(255, 255, 255, 0.15);
+            background: rgba(255, 255, 255, 0.1);
             border: 1px solid rgba(255, 255, 255, 0.2);
             color: white;
-            padding: 10px 25px;
-            border-radius: 12px;
+            padding: 12px 30px;
+            border-radius: 50px;
             text-decoration: none;
-            font-size: 0.9rem;
-            transition: 0.3s;
+            font-size: 0.85rem;
         }
-        .btn:hover { background: rgba(255, 255, 255, 0.25); }
         .transactions {
-            margin-top: 30px;
+            margin-top: 40px;
             width: 100%;
         }
         .trans-item {
             display: flex;
             justify-content: space-between;
-            padding: 15px 0;
+            padding: 18px 5px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
-        .trans-item:last-child { border-bottom: none; }
-        .m-neg { color: #ff6b6b; }
-        .m-pos { color: #51cf66; }
+        .m-neg { color: #ff8e8e; }
+        .m-pos { color: #8effa9; }
     </style>
 </head>
 <body>
@@ -84,18 +79,18 @@
         <span>Home</span>
         <span>Delicacies</span>
         <span>Orders</span>
-        <span style="font-weight: bold;">Wallet</span>
+        <span style="border-bottom: 1px solid white;">Wallet</span>
     </nav>
     <div class="container">
         <div class="glass-card">
-            <div class="balance-label">Current Balance</div>
-            <h1 class="amount">$1,284.50</h1>
-            <a href="#" class="btn">Add Funds</a>
+            <div class="balance-label">Available Balance</div>
+            <h1 class="amount">$2,500.00</h1>
+            <a href="#" class="btn">Top Up Wallet</a>
         </div>
         <div class="transactions">
-            <div class="trans-item"><span>Sushi Platter</span><span class="m-neg">-$45.00</span></div>
-            <div class="trans-item"><span>Wallet Top-up</span><span class="m-pos">+$200.00</span></div>
-            <div class="trans-item"><span>Italian Pasta</span><span class="m-neg">-$18.20</span></div>
+            <div class="trans-item"><span>Bank Transfer</span><span class="m-pos">+$500.00</span></div>
+            <div class="trans-item"><span>Platform Credit</span><span class="m-pos">+$10.00</span></div>
+            <div class="trans-item"><span>Withdrawal</span><span class="m-neg">-$150.00</span></div>
         </div>
     </div>
 </body>
