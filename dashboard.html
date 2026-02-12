@@ -1,42 +1,20 @@
 <!DOCTYPE html><html><head><title>RateReflex - Dashboard</title><style>
 body{margin:0;font-family:"Segoe UI",sans-serif;background:linear-gradient(135deg,#ff4d4d,#ffcc00);min-height:100vh;display:flex;flex-direction:column}
 nav{background:linear-gradient(90deg,#ff4d4d,#ffcc00);padding:15px 40px;display:flex;justify-content:space-between;align-items:center;border-bottom:3px solid #000;position:sticky;top:0;z-index:1000}
-.nav-links a{color:#000;text-decoration:none;font-weight:700;padding:8px 16px;border:3px solid #000;border-radius:8px;background:#ffeb3b;box-shadow:3px 3px 0px #000;margin-right:10px}
-.menu-container{position:relative;display:inline-block}
-.dots-btn{background:#ffeb3b;border:3px solid #000;border-radius:8px;padding:5px 15px;font-size:24px;font-weight:900;cursor:pointer;box-shadow:3px 3px 0px #000}
-.dropdown-content{display:none;position:absolute;right:0;top:55px;background:#fff;min-width:180px;border:3px solid #000;box-shadow:6px 6px 0px #000;z-index:3000;border-radius:10px;overflow:hidden}
-.dropdown-content a{color:#000;padding:12px 16px;text-decoration:none;display:block;font-weight:700;border-bottom:2px solid #000}
-.dropdown-content a:last-child{border-bottom:none}
-.dropdown-content a:hover{background:#ffeb3b}
-.show{display:block}
+.nav-links a{color:#000;text-decoration:none;font-weight:700;padding:8px 16px;border:3px solid #000;border-radius:8px;background:#ffeb3b;box-shadow:3px 3px 0px #000}
 .hero{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px}
 .welcome-box{background:#fff;border:4px solid #000;padding:40px;border-radius:20px;box-shadow:15px 15px 0px #000;max-width:600px}
 h1{font-size:3.5rem;margin:0 0 20px;text-transform:uppercase;letter-spacing:-2px;line-height:1}
 .main-btn{display:inline-block;text-decoration:none;color:#000;background:#ff4d4d;padding:15px 30px;font-size:1.5rem;font-weight:900;border:4px solid #000;border-radius:10px;box-shadow:8px 8px 0px #000;transition:0.2s}
+.main-btn:hover{transform:translate(-2px,-2px);box-shadow:10px 10px 0px #000}
 </style></head><body>
 <nav>
-<div class="nav-links">
-<a href="dashboard.html">Dashboard</a>
-<a href="delicacies.html">Delicacies</a>
-<a href="order.html">Order</a>
-</div>
-<div class="menu-container">
-<button class="dots-btn" onclick="toggleMenu()">⋮</button>
-<div id="myDropdown" class="dropdown-content">
-<a href="profile.html">My Profile</a>
-<a href="contact.html">Contact us</a>
-<a href="about.html">About us</a>
-</div>
-</div>
+    <div class="nav-links"><a href="dashboard.html">Home</a></div>
 </nav>
 <div class="hero">
-<div class="welcome-box">
-<h1>Welcome to RateReflex</h1>
-<p style="font-weight:600;margin-bottom:30px;font-size:1.2rem">Discover and rate the worlds best flavors.</p>
-<a href="delicacies.html" class="main-btn">VIEW DELICACIES</a>
-</div>
-</div>
-<script>
-function toggleMenu(){document.getElementById("myDropdown").classList.toggle("show");}
-window.onclick=function(e){if(!e.target.matches(".dots-btn")){var d=document.getElementById("myDropdown");if(d && d.classList.contains("show"))d.classList.remove("show");}}
-</script></body></html>
+    <div class="welcome-box">
+        <h1>Welcome to RateReflex</h1>
+        <p style="font-weight:600;margin-bottom:30px;font-size:1.2rem">Discover and rate the worlds best flavors.</p>
+        <a href="delicacies.html" class="main-btn">VIEW DELICACIES</a>
+    </div>
+</div></body></html>
